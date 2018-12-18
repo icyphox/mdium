@@ -34,10 +34,16 @@ status: draft
 ...
 ```
 
-Note that the `status` field can be either `draft` or `public`.
+Note that the `status` field can be either `draft` or `public`. I recommend that you publish them as drafts and fine tune using Medium’s editor.
 
-Finally, run
+If your post contains images, host them somewhere public and then include them in your document like so:
 
+```markdown
+![cat](https://catpics.com/some_cat.png)
+```
+Medium will then CDN it and you can delete it from there if you want to.
+
+When you’re ready to publish, run
 ```console
 $ mdium publish path/to/markdown.md
 Done! Your post has been published at https://medium.com/@gaben/76272e9d241c
