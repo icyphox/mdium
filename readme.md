@@ -1,4 +1,7 @@
-# mdium
+<h1 align="center">
+  <img src="https://x.ph0x.me/iYsTY.png" width="280">
+</h1>
+
 > publish your markdown to Medium, from the CLI
 
 ## Installation
