@@ -14,6 +14,8 @@ def init(token):
     with open(os.path.expanduser('~/.mdium'), 'w') as f:
         json.dump(conf, f)
 
+    print('Saved token and author ID at {}'.format(os.path.expanduser('~/.mdium')))
+
 
 def read_conf():
     with open(os.path.expanduser('~/.mdium'), 'r') as f:
@@ -21,15 +23,10 @@ def read_conf():
         return conf
 
 
-def post(mdfile, public=False):
+def publish(mdfile):
     conf = read_conf()
     with open(mdfile, 'r') as f:
         content = frontmatter.load(f)
-
-    if public:
-        status = "public"
-    else:
-        status = "draft"
 
     headers = {'Authorization': 'Bearer {}'.format(conf['token'])}
     body = {
@@ -37,7 +34,7 @@ def post(mdfile, public=False):
             'contentFormat': 'markdown',
             'content': content.content,
             'tags': content['tags'],
-            'publishStatus': status
+            'publishStatus': content['status']
            }
     r = requests.post(
             'https://api.medium.com/v1/users/{}/posts'.format(conf['id']), 
