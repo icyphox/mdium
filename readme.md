@@ -56,4 +56,4 @@ It’s that simple.
 
 ## License
 
-MIT © Anirudh Oppiliappan
+MIT © [Anirudh Oppiliappan](https://icyphox.sh)
