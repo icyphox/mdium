@@ -4,6 +4,8 @@
 
 > publish your markdown to Medium, from the CLI
 
+[Medium](https://medium.com/@icyphox/mdium-publish-your-markdown-to-medium-from-the-cli-79906ef6b16b) post I wrote on a whim.
+
 ## Installation
 
 ```console
