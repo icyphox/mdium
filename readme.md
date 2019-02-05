@@ -4,6 +4,8 @@
 
 > publish your markdown to Medium, from the CLI
 
+# Medium’s API seems to have changed. You can no longer generate an Integration Token from your profile settings. This app stands broken until they update their docs.
+
 [Medium](https://medium.com/@icyphox/mdium-publish-your-markdown-to-medium-from-the-cli-79906ef6b16b) post I wrote on a whim.
 
 ## Installation
